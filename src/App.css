@@ -1,5 +1,55 @@
 @import '~antd/dist/antd.css';
 
 .ui-container {
+    width: 1440px;
+    height: 937px;
     background-color: black;
+}
+
+.recharts-default-legend{
+    color: white;
+}
+.card{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.linechart-lower{
+    position: absolute;
+    top: 275px;
+    left: 65px;
+
+}
+
+.linechart-upper{
+    position: absolute;
+    top: 50px;
+    left: 787px;
+    width: 500px;
+
+}
+
+.heatmap{
+    position: absolute;
+    left: 787px;
+    top: 375px;
+    height: 400px;
+    width: 500px;
+}
+
+.heatmap-canvas{
+    
+    width: 500px;
+}
+
+.App{
+    line-height: 400px;
+}
+
+
+.piechart {
+    position: absolute;
+    top: 525px;
+    left: 100px;
 }
