@@ -1,5 +1,4 @@
 import React from 'react';
-//import Modal from "../Modal";
 import { Modal, Form, Input, Button } from 'antd';
 import { LockOutlined } from '@ant-design/icons';
 import "../../App.css";
@@ -29,7 +28,13 @@ class LoginPage extends React.Component {
                 {...layout}
                 name="basic"
                 >
-                
+                <Form.Item
+                    label="Username"
+                    name="username"
+                    rules={[{ required: true, message: 'Please input your username!' }]}
+                >
+                    <Input />
+                </Form.Item>*
 
                 <Form.Item
                     label="Password"
@@ -56,6 +61,7 @@ class LoginPage extends React.Component {
         
     }
 
+    //no auth yet
     handleOnSubmit(event){
         event.preventDefault();
         this.setState({
@@ -86,13 +92,5 @@ class LoginPage extends React.Component {
     );
     }
 }
-
-/*<Form.Item
-                    label="Username"
-                    name="username"
-                    rules={[{ required: true, message: 'Please input your username!' }]}
-                >
-                    <Input />
-                </Form.Item>*/
 
 export default LoginPage;
