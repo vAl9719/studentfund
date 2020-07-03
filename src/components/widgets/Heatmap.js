@@ -39,7 +39,7 @@ const Heatmap = () => {
 
   return (
     <div className="App" style={{color:"black"}}>
-      this is a heatmap
+      ""
     </div>
   );
 }
