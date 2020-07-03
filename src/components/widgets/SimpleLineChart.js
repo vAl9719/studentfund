@@ -40,12 +40,12 @@ class SimpleLineChart extends PureComponent {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
+        <XAxis dataKey="name" stroke="#FFFFFF"/>
+        <YAxis stroke="#FFFFFF"/>
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="pv" stroke="#E11A2C" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="uv" stroke="#FFFFFF" />
       </LineChart>
     );
   }
