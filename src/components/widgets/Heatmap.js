@@ -11,9 +11,9 @@ const Heatmap = () => {
     // now generate some random data
     var points = [];
     var max = 0;
-    var width = 840;
-    var height = 400;
-    var len = 200;
+    var width = 500;
+    var height = 450;
+    var len = 450;
 
     while (len--) {
      var val = Math.floor(Math.random()*100);
@@ -38,7 +38,7 @@ const Heatmap = () => {
 
 
   return (
-    <div className="App" style={{color:"white"}}>
+    <div className="App" style={{color:"black"}}>
       this is a heatmap
     </div>
   );
