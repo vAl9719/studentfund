@@ -4,11 +4,11 @@ import {Card} from "antd";
 class Box extends React.Component {
     render() {
         return (
-          <Card title="Box Title" style={{ width: 450}}>
+          <Card style={{ width: 375, height: 150}}>
           <ul>
-          <li>Card content</li>
-          <li>Card content</li>
-          <li>Card content</li>
+            <div className="cost"><p>Cost: {this.props.cost}</p></div>
+            <div className="number"><p>Number of stocks: {this.props.number}</p></div>
+            <div className="holdings"><p>Holdings: {this.props.holdings}</p></div>
           </ul>
         </Card>
         );
