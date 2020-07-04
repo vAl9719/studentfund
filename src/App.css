@@ -11,36 +11,39 @@
 }
 .card{
     position: absolute;
-    top: 25px;
-    left: 100px;
+    top: 420px;
+    left: 550px;
 }
 
 .linechart-lower{
     position: absolute;
-    top: 275px;
-    left: 65px;
+    top: 140px;
+    left: 45px;
 
 }
 
 .linechart-upper{
     position: absolute;
-    top: 50px;
-    left: 787px;
+    top: 600px;
+    left: 310px;
     width: 500px;
 
 }
+
+.barchart{
+    position: absolute;
+    left: 850px;
+    top: 140px;
+}
+
+
 
 .heatmap{
     position: absolute;
-    left: 800px;
-    top: 375px;
-    height: 400px;
-    width: 500px;
-}
-
-.heatmap-canvas{
-    
-    width: 500px;
+    left: 920px;
+    top: 600px;
+    height: 200px;
+    width: 400px;
 }
 
 .App{
@@ -50,6 +53,96 @@
 
 .piechart {
     position: absolute;
-    top: 525px;
-    left: 100px;
+    top: 500px;
+    left: 10px;
+}
+
+.ant-layout-header{
+    position: absolute;
+    width: 1440px;
+    height: 87px;
+    left: 0px;
+    top: 0px;
+
+    color:white;
+    background-color:#E11A2C;
+}
+
+.neu{
+    position:absolute;
+    top: 10px;
+    font-weight: bold;
+    font-size:30px;
+    color:black;
+}
+
+.svu{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+    color:black;
+}
+
+.nelogo{
+    position: relative;
+    line-height: 1;
+    width: 17em;
+    height: auto;
+    left: 1100px;
+    top: -80px;
+}
+
+.dropdown-lower {
+    position: absolute;
+    left: 50px;
+    top:100px;
+}
+
+.dropdown-upper{
+    position: absolute;
+    left: 850px;
+    top: 100px;
+}
+
+.input-start-lower{
+    position: absolute;
+    left: 180px;
+    top: 100px;
+    width: 75px;
+}
+
+.input-end-lower{
+    position: absolute;
+    left: 262px;
+    top: 100px;
+    width: 75px;
+}
+
+.input-start-upper{
+    position: absolute;
+    left: 980px;
+    top: 100px;
+    width: 75px;
+    
+}
+
+.input-end-upper{
+    position: absolute;
+    left: 1062px;
+    top: 100px;
+    width: 75px;
+}
+
+.times-lower{
+    position: absolute;
+    left: 346px;
+    top: 100px;
+}
+
+.times-upper{
+    position: absolute;
+    left: 1146px;
+    top: 100px;
 }
