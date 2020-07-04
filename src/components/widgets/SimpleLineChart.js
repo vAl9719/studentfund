@@ -3,6 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
+
 const data = [
   {
     name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
@@ -34,18 +35,19 @@ class SimpleLineChart extends PureComponent {
       <LineChart
         width={500}
         height={300}
-        data={data}
+        data={this.props.data || data}
         margin={{
           top: 5, right: 30, left: 20, bottom: 5,
         }}
       >
+      
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" stroke="#FFFFFF"/>
+        <XAxis dataKey={this.props.x || "name"} stroke="#FFFFFF"/>
         <YAxis stroke="#FFFFFF"/>
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="pv" stroke="#E11A2C" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="uv" stroke="#FFFFFF" />
+        <Line type="monotone" dataKey={this.props.benchmark || this.props.sectorone || "pv"} stroke="#E11A2C" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey={this.props.portfolio || this.props.sectortwo || "uv"} stroke="#FFFFFF" />
       </LineChart>
     );
   }
