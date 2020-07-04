@@ -15,7 +15,7 @@ import "../App.css";
 const App = () => {
     return (
         <div className="ui-container">
-        
+        <LoginPage/>
         <div className="navbar"><NavBar/></div>
         <div className="card"><Card/></div>
         <div className="dropdown-lower"><DropdownMenu
@@ -44,5 +44,3 @@ const App = () => {
 };
 
 export default App;
-
-//<LoginPage/>
