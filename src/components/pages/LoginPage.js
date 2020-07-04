@@ -28,13 +28,6 @@ class LoginPage extends React.Component {
                 {...layout}
                 name="basic"
                 >
-                <Form.Item
-                    label="Username"
-                    name="username"
-                    rules={[{ required: true, message: 'Please input your username!' }]}
-                >
-                    <Input />
-                </Form.Item>*
 
                 <Form.Item
                     label="Password"
@@ -80,6 +73,7 @@ class LoginPage extends React.Component {
           onOk={this.handleOnSubmit}
           confirmLoading={confirmLoading}
           closable={false}
+          maskStyle={{background:"rgba(0,0,0,0.9)"}}
           footer={[
               <Button type="primary" htmlType="submit" onClick={this.handleOnSubmit}>
               Submit
