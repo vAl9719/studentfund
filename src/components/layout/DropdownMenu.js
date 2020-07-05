@@ -34,7 +34,6 @@ class DropdownMenu extends React.Component {
     return(
     <Select
     labelInValue
-    defaultValue={{ key: 'SPX' }}
     style={{ width: 120 }}
     onChange={this.handleChange}
   >
