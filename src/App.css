@@ -102,7 +102,7 @@
 
 .dropdown-upper{
     position: absolute;
-    left: 850px;
+    left: 875px;
     top: 100px;
 }
 
@@ -116,22 +116,7 @@
 .input-end-lower{
     position: absolute;
     left: 262px;
-    top: 100px;
-    width: 75px;
-}
-
-.input-start-upper{
-    position: absolute;
-    left: 980px;
-    top: 100px;
-    width: 75px;
-    
-}
-
-.input-end-upper{
-    position: absolute;
-    left: 1062px;
-    top: 100px;
+    top: 43.5px;
     width: 75px;
 }
 
@@ -141,8 +126,14 @@
     top: 100px;
 }
 
-.times-upper{
+.barchart-form{
     position: absolute;
-    left: 1146px;
-    top: 100px;
+    top: 0px;
+    left:800px;
+}
+
+.form-button{
+    position:absolute;
+    left: 475px;
+    top: -12px;
 }
