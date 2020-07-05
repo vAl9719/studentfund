@@ -7,10 +7,10 @@ const {Option} = Select;
 class DropdownMenu extends React.Component {
 
     handleChange = (value) => {
-        console.log(value);
+        console.log(value.key);
         axios({
     "method":"GET",
-    "url":"https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-histories",
+    "url":"https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-statistics",
     "headers":{
     "content-type":"application/octet-stream",
     "x-rapidapi-host":"apidojo-yahoo-finance-v1.p.rapidapi.com",
@@ -18,37 +18,33 @@ class DropdownMenu extends React.Component {
     "useQueryString":true
     },"params":{
     "region":"US",
-    "lang":"en",
-    "symbol":value.key,
-    "from":"1231866000",
-    "to":"1547524844",
-    "events":"div",
-    "interval":"1mo",
+    "symbol":value.key
     }
     })
     .then((response)=>{
-      console.log(response);
-      console.log(response.data.chart.result[0].indicators.quote[0].close);
-
+      console.log(response)
+      
     })
     .catch((error)=>{
       console.log(error)
-    })
-
-        
+    })  
     }
     
     render(){
     return(
     <Select
     labelInValue
-    defaultValue={{ key: 'AMZN' }}
+    defaultValue={{ key: 'SPX' }}
     style={{ width: 120 }}
     onChange={this.handleChange}
   >
-    <Option value="AAPL">Apple</Option>
-    <Option value="AMZN">Amazon</Option>
+    <Option value="SPX">SP 500</Option>
+    <Option value="DJIA">Dow Jones</Option>
+    <Option value="NDAQ">Nasdaq</Option>
+    <Option value="RUT">Russell 2000</Option>
+    
   </Select>
+  
   );
     }
 }
