@@ -34,7 +34,7 @@ class SimpleBarChart extends PureComponent {
       <BarChart
         width={500}
         height={300}
-        data={data}
+        data={this.props.data || data}
         margin={{
           top: 5, right: 30, left: 20, bottom: 5,
         }}
@@ -44,8 +44,8 @@ class SimpleBarChart extends PureComponent {
         <YAxis stroke="#FFFFFF"/>
         <Tooltip />
         <Legend />
-        <Bar dataKey="pv" fill="#E11A2C" />
-        <Bar dataKey="uv" fill="#FFFFFF" />
+        <Bar dataKey={this.props.benchmark || this.props.sectorone || "pv"} fill="#E11A2C" />
+        <Bar dataKey={this.props.portfolio || this.props.sectortwo || "uv"} fill="#FFFFFF" />
       </BarChart>
     );
   }
