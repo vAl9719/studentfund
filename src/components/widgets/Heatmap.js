@@ -26,7 +26,7 @@ class Heatmap extends PureComponent {
         dataKey="size"
         ratio={4 / 3}
         stroke="#fff"
-        fill="#8884d8"
+        fill="#666666"
       />
     );
   }
